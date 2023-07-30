@@ -23,7 +23,7 @@ const Login = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/auth/login",
+        "https://cyan-proud-turkey.cyclic.cloud/api/v1/auth/login",
         {
           email: email,
           password: password,

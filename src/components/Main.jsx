@@ -24,12 +24,15 @@ const Main = ({ data }) => {
       return;
     }
     try {
-      const response = await axios.patch("http://localhost:8000/app/about", {
-        title: title,
-        title2: title2,
-        title3: title3,
-        desc: desc,
-      });
+      const response = await axios.patch(
+        "https://cyan-proud-turkey.cyclic.cloud/app/about",
+        {
+          title: title,
+          title2: title2,
+          title3: title3,
+          desc: desc,
+        }
+      );
       setLoading(false);
       toast.success("Updated Succesfully...!!", {
         position: "bottom-center",

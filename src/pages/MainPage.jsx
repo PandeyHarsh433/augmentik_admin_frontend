@@ -12,7 +12,9 @@ const MainPage = () => {
   }, []);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:8000/app/about");
+    const response = await axios.get(
+      "https://cyan-proud-turkey.cyclic.cloud/app/about"
+    );
     const data = await response.data;
     setMainData(data);
   };

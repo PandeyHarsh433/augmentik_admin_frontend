@@ -56,7 +56,7 @@ const About = ({ data }) => {
         requestBody.desc = desc;
       }
       const response = await axios.patch(
-        `http://localhost:8000/card/${data._id}`,
+        `https://cyan-proud-turkey.cyclic.cloud/card/${data._id}`,
         requestBody
       );
       setLoading(false);
